@@ -1,7 +1,5 @@
 package Tutorial;
 
-import Tutorial.InsertOperation.Node;
-
 public class DeleteOperation {
 	Node head=null;
 	public class Node{
@@ -14,22 +12,8 @@ public class DeleteOperation {
 	}
 	
 	Node insert_First(int val) {
-		/*head pointing to 2
-		 * 2-->3-->4
-		 * 
-		 * Create a new node
-		 *  * ---------
-		 * | 1 |null|     ----> node
-		 * ---------
-		 */
 		Node node=new Node(val);
         node.next=head;
-        /*
-        *  * ---------
-		 * | 1 |next|     ----> node
-		 * ---------
-		 * here next pointing to node 2
-		 */
         head=node;
         return head;
 	}
